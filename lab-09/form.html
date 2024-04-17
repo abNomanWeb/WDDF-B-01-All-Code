@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Registration Form</title>
+	</head>
+	<body>
+		<ol type="I">
+			<li>
+				<a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+			</li>
+			<li>CSS</li>
+			<li>JS</li>
+			<li>Bootstrap</li>
+			<li>Tailwind</li>
+		</ol>
+		<hr>
+		<ul type="none">
+			<li>
+				<a href="https://www.w3schools.com/html/default.asp" target="_blank">HTML</a>
+			</li>
+			<li>CSS</li>
+			<li>JS</li>
+			<li>Bootstrap</li>
+			<li>Tailwind</li>
+		</ul>
+		<hr>
+		<fieldset>
+			<legend align="center">Registration Form</legend>
+		<form action="" method="get">
+			<input type="number" name="test_number" placeholder="Number Testing" min="0" max="10">
+			<br><br>
+			
+			<input type="text" name="test_text" placeholder="Text Testing" minlength="5" maxlength="10">
+		
+			<hr>
+		
+			<select name="course_name">
+				<option value="">Select Your Course</option>
+				<option value="web">Web Design and Development</option>
+				<option value="graphics">Graphics Design</option>
+				<option value="dm">Digital Marketing</option>
+			</select>
+			<br><br>
+			
+			<label>Select Your Shift:</label> <br>
+			<input type="checkbox" name="shift_select" value="morn_shift"> <label>Morning Shift</label>
+			<input type="checkbox" name="shift_select" value="day_shift"> <label>Day Shift</label>
+			<input type="checkbox" name="shift_select" value="even_shift"> <label>Evening Shift</label>
+			<input type="checkbox" name="shift_select" value="weedend_shift"> <label>Weekend Shift</label>
+			
+			<br><br>
+			
+			<label>Select Projects</label><br>
+			<input type="radio" name="select_projects" value="seip"> <label>SEIP Projects</label> <br>
+			<input type="radio" name="select_projects" value="bytes"> <label>Bytes Projects</label> <br>
+			
+			<input type="text" name="hidden_value" value="112233445566" hidden>
+			<br><br>
+			
+			<input type="color" name="jersy_color">
+			<br><br>
+			
+			<input type="date" name="dob">
+			<br><br>
+			
+			<input type="file" name="documents" accept="image/*" multiple>
+			<br><br>
+			
+			<input type="password" name="password" placeholder="Type Strong Password">
+			<br><br>
+			
+			<hr>
+		
+			<input type="text" placeholder="Your Name" name="user_name" autofocus>			
+			<br> <br>			
+			<input type="email" placeholder="Type Valid Email" name="user_email">			
+			<br> <br>
+			<input type="tel" placeholder="Type Valid Bangladeshi Number" name="user_mobile"> 			
+			<br> <br>			
+			<textarea placeholder="Write Your Messages" name="user_mesages" rows="6"cols="30"></textarea> 			
+			<br> <br>			
+			<!-- <input type="submit" value="Send Your Messages"> -->
+			<button type="submit">Submit your Commant</button>
+			<button type="reset">Clean Your Form</button>
+		</form>
+		</fieldset>
+	</body>
+</html>
