@@ -1,0 +1,34 @@
+header{
+	height: 200px; 
+	width: 100%;
+	background: green;
+}
+
+nav{
+	height: 60px; 
+	width: 100%;
+	background: red;
+}
+
+main{
+	height: 600px; 
+	width: 100%;
+	background: #c2c2c2;
+}
+article{
+	height: 100%;
+	width: 70%;
+	background: blue;
+	float: left;
+}
+aside{
+	height: 100%;
+	width: 30%;
+	background: purple;
+	float: left;
+}
+footer{
+	height: 50px; 
+	width: 100%;
+	background: tomato;
+}

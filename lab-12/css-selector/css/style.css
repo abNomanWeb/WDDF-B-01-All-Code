@@ -1,0 +1,17 @@
+.block-style{
+	width: 400px;
+	height: 400px;
+	border: 10px solid green;
+	
+	margin: 50px;
+}
+
+.content-style{
+	width: 400px;
+	height: 400px;
+	border: 10px solid red;
+	
+	margin: 50px;
+	
+	display: inline-block;
+}
