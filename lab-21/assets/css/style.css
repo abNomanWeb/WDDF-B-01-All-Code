@@ -1,0 +1,47 @@
+@keyframes xyz{
+	0%{
+		top: 0px;
+		left: 0px;
+	}
+	25%{
+		transform: rotate(360deg);
+		top: 0px;
+		left: 75%;
+	}
+	50%{
+		transform: rotate(-360deg);
+		top: 70%;
+		left: 75%;
+	}
+	75%{
+		transform: rotate(360deg);
+		top: 70%;
+		left: 0%;
+	}
+	100%{
+		transform: rotate(-360deg);
+		top: 0px;
+		left: 0px;
+	}
+}
+section{
+	width: 800px;
+	height: 600px;
+	margin: 0px auto;	
+	border: 1px solid red;
+	
+	position: relative;
+}
+div{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	
+	/* animation-name: xyz;
+	animation-duration: 2s;
+	animation-iteration-count: infinite; */
+	animation: xyz 10s infinite linear alternate;
+}
+div img{
+	width: 100%;
+}
