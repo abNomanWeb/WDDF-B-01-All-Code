@@ -1,0 +1,125 @@
+/* common code start */
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+body{
+	margin: 0px;
+}
+.container{
+	width: 90%;
+	margin: 0px auto;
+}
+.d-flex{
+	display: flex;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+ul li{
+	list-style: none;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+/* common code end */
+/* nav section start */
+#navbar-section{
+	background: #18FFBA;
+}
+.navbar{
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 0px;
+}
+.navbar-brand{
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 34px;
+	font-weight: 600;
+	font-family: "Segoe UI", sans-serif;
+}
+.navbar-nav{
+	flex-direction: row;
+	align-items: center;
+}
+.navbar-nav a{
+	color: rgba(0, 0, 0, 1);
+	font-size: 16px;
+	font-weight: 500;
+	font-family: "Segoe UI", sans-serif;
+	padding: 0px 20px;
+	margin: 0px 0px 0px 10px;
+}
+.navbar-nav li:last-child a{
+	padding: 0px 0px 0px 20px;
+}
+/* nav section end */
+
+/* header section start */
+#header-section{
+	background: #18FFAA;
+}
+#header-section section{
+	
+}
+.header-content{
+	width: 100%;
+	padding: 80px 0px 80px 0px;
+}
+.header-content h2{
+	color: #060606;
+	font-size: 72px;
+	font-weight: 700;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px;
+}
+.header-content h3{
+	color: #060606;
+	font-size: 72px;
+	font-weight: 100;
+	line-height: 1;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px;
+}
+.header-content p{
+	color: #060606;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: "Segoe UI", sans-serif;
+	margin: 40px 0px;
+	max-width: 550px;
+}
+.header-content a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "Segoe UI", sans-serif;
+	
+	background: #F7783C;
+	padding: 10px 30px;
+	border-radius: 20px;
+
+	transition: .5s;
+}
+.header-content a:hover{
+	background: #0ABF53;
+}
+.header-poster{
+	width: 60%;
+	align-items: center;
+	overflow: hidden;
+}
+.header-poster img{
+	width: 100%;
+	display: block;
+	animation: rotate 8s infinite linear;
+}
+/* header section end */
+
