@@ -1,0 +1,288 @@
+/* common code start */
+@keyframes background{
+	from{
+		background: #18FFBA;
+	}
+	to{
+		background: #78F78B;
+	}
+}
+@keyframes rotate{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+body{
+	margin: 0px;
+}
+.container{
+	width: 87%;
+	margin: 0px auto;
+}
+.d-flex{
+	display: flex;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+ul li{
+	list-style: none;
+}
+a{
+	display: inline-block;
+	text-decoration: none;
+}
+/* common code end */
+/* nav section start */
+#navbar-section{
+	animation: background 2s linear infinite alternate;
+}
+.navbar{
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px 0px;
+}
+.navbar-brand{
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 34px;
+	font-weight: 600;
+	font-family: "Segoe UI", sans-serif;
+}
+.navbar-nav{
+	flex-direction: row;
+	align-items: center;
+}
+.navbar-nav li a{
+	color: rgba(0, 0, 0, 1);
+	font-size: 16px;
+	font-weight: 500;
+	font-family: "Segoe UI", sans-serif;
+	padding: 0px 20px;
+	margin: 0px 0px 0px 10px;
+	transition: .3s;
+}
+.navbar-nav li a:hover{
+	color: #F7783C;
+}
+.navbar-nav li a.active{
+	color: #F7783C;
+}
+.navbar-nav li:last-child a{
+	padding: 0px 0px 0px 20px;
+}
+/* nav section end */
+
+/* header section start */
+#header-section{
+	animation: background 2s linear infinite alternate;
+}
+#header-section section{
+	padding-bottom: 50px;
+}
+.header-content{
+	width: 100%;
+	padding: 80px 0px 80px 0px;
+}
+.header-content h2{
+	color: #060606;
+	font-size: 72px;
+	font-weight: 700;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px;
+}
+.header-content h3{
+	color: #060606;
+	font-size: 72px;
+	font-weight: 100;
+	line-height: 1;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px;
+}
+.header-content p{
+	color: #060606;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: "Segoe UI", sans-serif;
+	margin: 40px 0px;
+	max-width: 550px;
+}
+.header-content a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: "Segoe UI", sans-serif;
+	
+	background: #F7783C;
+	padding: 10px 30px;
+	border-radius: 20px;
+
+	transition: .5s;
+}
+.header-content a:hover{
+	background: #0ABF53;
+}
+.header-poster{
+	width: 60%;
+	align-items: center;
+	overflow: hidden;
+}
+.header-poster img{
+	width: 100%;
+	display: block;
+	animation: rotate 8s infinite linear;
+}
+/* header section end */
+
+/* about section start */
+#about-section{
+	background: #fff;
+}
+.about-poster{
+	width: 100%;
+	position: relative;
+	padding: 80px 0px;
+}
+.about-poster img{
+	border: 5px solid #fff;
+	border-radius: 5px;
+}
+.about-poster img:last-child{
+	position: absolute;
+	left: 30%;
+    top: 20%;
+}
+.about-content{
+	width: 100%;
+	padding: 80px 0px;
+}
+.about-content h4{
+	color: #060606;
+	font-size: 28px;
+	font-weight: 100;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px;
+}
+.about-content h2{
+	color: #060606;
+	font-size: 45px;
+	font-weight: 700;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px;
+}
+.about-content h2 span{
+	color: #F7783C;
+}
+.about-content q{
+	color: #060606;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: italic;
+	line-height: 1.5;
+	font-family: "Segoe UI", sans-serif;
+	display: block;
+	margin: 30px 0px;
+}
+.about-content p{
+	color: #060606;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px 0px 50px 0px;
+}
+/* about section end */
+
+/* popular section start */
+#popular-section{
+	background: #f7f4f4;
+	padding: 80px 0px;
+}
+.title{
+	text-align: center;
+	padding: 0px 0px 50px 0px;
+}
+.title h3{
+	color: #060606;
+	font-size: 45px;
+	font-weight: 700;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px;
+}
+.title h3 span{
+	color: #F7783C;
+	font-weight: 500;
+}
+.card {
+	width: 100%;
+	padding: 60px 40px;
+	background: #fff;
+	border-radius: 5px;
+	margin: 0px 10px;
+	position: relative;
+	
+	overflow: hidden;
+}
+.card::before{
+	content: '';
+    width: 300px;
+    height: 170px;
+	background: rgb(0 169 90 / 44%);
+    position: absolute;
+    top: -10%;
+    left: -28%;
+    transform: rotate(50deg);
+    border-radius: 50%;
+	transition: .5s linear;
+}
+.card:hover::before{
+	background: #f7783c;
+}
+.card img{
+	display: block;
+	border: 12px solid #fff;
+	border-radius: 50%;
+	position: relative;
+}
+.card a{
+	color: #060606;
+	font-size: 26px;
+	font-weight: 700;
+	font-family: "Segoe UI", sans-serif;
+	display: block;
+	margin: 20px 0px;
+	transition: .3s;
+}
+.card a:hover{
+	color: #f7783c;
+}
+.card p{
+	color: #060606;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	font-family: "Segoe UI", sans-serif;
+	margin: 0px;
+	
+}
+.card p::after{	
+	content: '';
+    width: 80px;
+    height: 80px;
+    background: #f7783c;
+	
+    position: absolute;
+	bottom: -47px;
+    right: -32px;
+    transform: rotate(53deg);
+	opacity: 0;
+	transition: .5s linear;
+}
+.card:hover p::after{
+	opacity: 1;
+}
+/* popular section end */
