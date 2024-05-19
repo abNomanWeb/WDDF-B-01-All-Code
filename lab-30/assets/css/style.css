@@ -1,0 +1,77 @@
+/* common code start */
+*{
+	font-family: "Work Sans", sans-serif;
+}
+:root{
+	--brand-color: #6c55f9;
+	--hover-color: #645F88;
+}
+/* bootstrap override start */
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1120px;
+    }
+}
+/* bootstrap override end */
+.btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--brand-color);
+    --bs-btn-border-color: var(--brand-color);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--hover-color);
+	--bs-btn-hover-border-color: var(--hover-color);
+}
+/* common code end */
+
+/* navbar section start */
+.navbar-brand{
+	color: rgba(0, 0, 0, 0.9);
+	font-size: 20px;
+	font-weight: 600;
+}
+.navbar-brand span{
+	color: var(--brand-color);
+}
+.nav-link{
+	color: #645F88;
+	font-size: 16px;
+	font-weight: 400;
+	padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+.nav-link:hover{
+	color: #645f88;
+}
+.navbar-nav .nav-link.active{
+	color: var(--brand-color);
+}
+/* navbar section end */
+
+/* header section start */
+.carousel{
+	background: #F6F5FC;
+}
+.carousel-item-content h2{
+	color: #645f88;
+	font-size: 40px;
+	font-weight: 500;
+}
+.carousel-item-content p{
+	color: #8e8aad;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.carousel-indicators [data-bs-target] {
+    width: 20px;
+    height: 20px;
+	border-radius: 50%;
+    background-color: var(--hover-color);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 1;
+}
+.carousel-indicators .active {
+    background-color: var(--brand-color);
+}
+/* header section end */
