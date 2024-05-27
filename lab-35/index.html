@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<title>Bootstrap demo</title>
+    <meta charset="utf-8">
+	<meta name="description" content="Free Web tutorials">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- wow js -->
+	<link href="assets/css/animate.css" rel="stylesheet">
+	<!-- aos animation -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- font awesome -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+	<!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Default CSS -->
+	<link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+	<!-- navbar section start -->
+	<nav id="nav-section" class="navbar navbar-expand-md bg-body">
+	  <div class="container">
+		<a class="navbar-brand" href="index.html">
+			Seo<span>Gram.</span>
+		</a>
+		
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#MyNav">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="MyNav">
+		  <ul class="navbar-nav ms-auto text-center mb-2 mb-md-0">
+			<li class="nav-item">
+			  <a class="nav-link active" href="#">Home</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">About</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Services</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Blog</a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Contact</a>
+			</li>
+		  </ul>
+			<a class="btn btn-primary px-4 d-block text-center" href="#">Free Analysis</a>
+		</div>
+	  </div>
+	</nav>
+	<!-- navbar section end -->
+	
+	<!-- header section start -->
+	<header id="header-section" class="bg-body">
+		<div id="myCarousel" class="container carousel slide rounded-5 py-5 px-4" data-bs-ride="carousel" data-bs-interval="1500">
+		  <!-- indicator start -->
+		  <div class="carousel-indicators">
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+			<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+		  </div>
+		  <!-- indicator end -->
+		
+		  <div class="carousel-inner p-3 p-lg-5">
+			<div class="carousel-item active">
+				<div class="row">
+					<div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="1500">
+						<div class="text-center text-lg-start carousel-item-content">
+							<h2>Let's Check and Optimize your website!</h2>
+							<p class="my-4 my-lg-5">
+								Ignite the most powerfull growth engine you have ever built for your company
+							</p>
+							<a href="" class="btn btn-primary px-5 py-2 d-inlile-block rounded-pill position-relative z-3">Watch Video</a>
+						</div>
+					</div>
+					<div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-duration="1500">
+						<div class="pb-4 px-0 px-md-5 px-lg-0 carousel-item-poster">
+							<img src="assets/img/banner_image.svg" class="img-fluid px-5" alt="" title="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-lg-6 order-2 order-lg-1">
+						<div class="text-center text-lg-start carousel-item-content">
+							<h2>Let's Check and Optimize your website!</h2>
+							<p class="my-4 my-lg-5">
+								Ignite the most powerfull growth engine you have ever built for your company
+							</p>
+							<a href="" class="btn btn-primary px-5 py-2 d-inlile-block rounded-pill position-relative z-3">Watch Video</a>
+						</div>
+					</div>
+					<div class="col-lg-6 order-1 order-lg-2">
+						<div class="pb-4 px-0 px-md-5 px-lg-0 carousel-item-poster">
+							<img src="assets/img/banner_image.svg" class="img-fluid px-5" alt="" title="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="row">
+					<div class="col-lg-6 order-2 order-lg-1">
+						<div class="text-center text-lg-start carousel-item-content">
+							<h2>Let's Check and Optimize your website!</h2>
+							<p class="my-4 my-lg-5">
+								Ignite the most powerfull growth engine you have ever built for your company
+							</p>
+							<a href="" class="btn btn-primary px-5 py-2 d-inlile-block rounded-pill position-relative z-3">Watch Video</a>
+						</div>
+					</div>
+					<div class="col-lg-6 order-1 order-lg-2">
+						<div class="pb-4 px-0 px-md-5 px-lg-0 carousel-item-poster">
+							<img src="assets/img/banner_image.svg" class="img-fluid px-5" alt="" title="">
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  
+		  <!-- button control start -->
+		  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+		  </button>
+		  
+		  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+		  </button>
+		  <!-- button control end -->
+		</div>
+	</header>
+	<!-- header section start -->
+	
+	<!-- features section start -->
+	<section id="features-section" class="py-4 py-lg-5">
+		<section class="container py-4 py-lg-5">
+			<div class="row gx-lg-5">
+				<div class="col-sm-6 col-lg-4" data-aos="fade-down-right" data-aos-duration="1500" data-aos-delay="300">
+					<figure class="card px-2 py-4 p-md-4 text-center">
+						<div class="card-header color-yellow-bg">
+							<i class="fa-solid fa-trophy color-yellow"></i>
+						</div>
+						<figcaption class="card-body">
+							<h3 class="card-title">
+								SEO Consultancy
+							</h3>
+							<p class="card-text my-3">
+								We help you define your SEO objective & develop a realistic strategy with you
+								</p>
+							<a href="#" class="btn btn-primary px-4 py-2">Read Mode</a>
+						</figcaption>
+					</figure>
+				</div>
+				
+				<div class="col-sm-6 col-lg-4" data-aos="flip-up" data-aos-duration="1500" data-aos-delay="300">
+					<figure class="card px-2 py-4 p-md-4 text-center">
+						<div class="card-header color-green-bg">
+							<i class="fa-solid fa-file-csv color-green"></i>
+						</div>
+						<figcaption class="card-body">
+							<h3 class="card-title">
+								SEO Consultancy
+							</h3>
+							<p class="card-text my-3">
+								We help you define your SEO objective & develop a realistic strategy with you
+								</p>
+							<a href="#" class="btn btn-primary px-4 py-2">Read Mode</a>
+						</figcaption>
+					</figure>
+				</div>
+				
+				<div class="col-sm-12 col-lg-4" data-aos="fade-down-left" data-aos-duration="1500" data-aos-delay="300">
+					<figure class="card px-2 py-4 p-md-4 text-center">
+						<div class="card-header color-blue-bg">
+							<i class="fa-solid fa-laptop-code color-blue"></i>
+						</div>
+						<figcaption class="card-body">
+							<h3 class="card-title">
+								SEO Consultancy
+							</h3>
+							<p class="card-text my-3">
+								We help you define your SEO objective & develop a realistic strategy with you
+								</p>
+							<a href="#" class="btn btn-primary px-4 py-2">Read Mode</a>
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- features section end -->
+	
+	<!-- about section start -->
+	<section id="about-section" class="py-4 py-lg-5">
+		<section class="container py-4 py-lg-5">
+			<div class="row">
+				<div class="col-lg-6 pb-5 pb-lg-0 wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay=".5s">
+					<div class="about-content text-center text-lg-start">
+						<div class="title pb-5">
+							<h2>ABOUT US</h2>
+							<h3>The number #1 SEO Service Company</h3>
+						</div> <!-- title end -->
+						<p>
+							Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+						</p>
+						<p class="py-3">
+							At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren.
+						</p>
+						<a href="" class="btn btn-primary px-4 py-2">Read More</a>
+					</div>
+				</div>
+				<div class="col-lg-6 wow bounceInRight" data-wow-duration="1.5s" data-wow-delay=".5s">
+					<div class="about-poster text-center text-lg-start">
+						<img src="assets/img/about-us.png" class="img-fluid" alt="" title="">
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- about section end -->
+	
+	<!-- seo checker section start -->
+	<section id="seo-section" class="py-4 py-lg-5">
+		<section class="container py-4 py-lg-5 text-center">
+			<h3 class="mb-4">Check your Website SEO</h3>
+			<form>
+				<div class="w-75 mx-auto d-flex seo-search-box">
+					<input type="search" name="searchResult" value="" placeholder="E.g domain.com" class="form-control py-3">
+					<button class="btn btn-success px-4 py-2">Check Now</button>
+				</div>
+			</form>
+		</section>
+	</section>
+	<!-- seo checker section start -->
+	
+	<!-- pricing plan start -->
+	<section id="pricing-plan-section" class="py-4 py-lg-5">
+		<section class="container py-4 py-lg-5">
+			<div class="row">
+				<div class="col-12">
+					<div class="title pb-5">
+						<h2>PRICING PLAN</h2>
+						<h3>Choose plan the right for you</h3>
+					</div> <!-- title end -->
+				</div>
+			</div>
+			
+			<div class="row gy-4">
+				<div class="col-md-6 col-lg-4">
+					<div class="pricing-card">
+						<div class="pricing-card-header">
+							<p>Basic</p>
+							<h3> 
+								<sup>$</sup>
+								39<span>.99</span>
+							</h3>
+							<h4>PER MONTH</h4>
+						</div>
+						<div class="pricing-card-body">
+							<ul class="list-unstyled">
+								<li>
+									25 Analytics <span>Campaign</span>
+								</li>
+								<li>
+									1,300 Change <span>Campaign</span>
+								</li>
+								<li>
+									Social Media <span>Campaign</span>
+								</li>
+								<li>
+									1 Free <span>Optimization</span>	
+								</li>
+								<li>
+									24/7 <span>Support</span>
+								</li>
+							</ul>
+						</div>
+						<div class="pricing-card-footer">
+							<a href="" class="btn btn-primary d-block mt-3">Subcribe</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6 col-lg-4">
+					<div class="pricing-card active">
+						<div class="pricing-card-header">
+							<p>Basic</p>
+							<h3> 
+								<sup>$</sup>
+								39<span>.99</span>
+							</h3>
+							<h4>PER MONTH</h4>
+						</div>
+						<div class="pricing-card-body">
+							<ul class="list-unstyled">
+								<li>
+									25 Analytics <span>Campaign</span>
+								</li>
+								<li>
+									1,300 Change <span>Campaign</span>
+								</li>
+								<li>
+									Social Media <span>Campaign</span>
+								</li>
+								<li>
+									1 Free <span>Optimization</span>	
+								</li>
+								<li>
+									24/7 <span>Support</span>
+								</li>
+							</ul>
+						</div>
+						<div class="pricing-card-footer">
+							<a href="" class="btn btn-primary d-block mt-3">Subcribe</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-6 offset-md-3 offset-lg-0 col-lg-4">
+					<div class="pricing-card">
+						<div class="pricing-card-header">
+							<p>Basic</p>
+							<h3> 
+								<sup>$</sup>
+								39<span>.99</span>
+							</h3>
+							<h4>PER MONTH</h4>
+						</div>
+						<div class="pricing-card-body">
+							<ul class="list-unstyled">
+								<li>
+									25 Analytics <span>Campaign</span>
+								</li>
+								<li>
+									1,300 Change <span>Campaign</span>
+								</li>
+								<li>
+									Social Media <span>Campaign</span>
+								</li>
+								<li>
+									1 Free <span>Optimization</span>	
+								</li>
+								<li>
+									24/7 <span>Support</span>
+								</li>
+							</ul>
+						</div>
+						<div class="pricing-card-footer">
+							<a href="" class="btn btn-primary d-block mt-3">Subcribe</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- pricing plan end -->
+	
+	<!-- brand section start -->
+	<section id="brand-section" class="py-4 py-lg-5">
+		<section class="container py-4 py-lg-5">
+			<div class="row">
+				<div class="col-lg-6 pb-5 pb-lg-0">
+					<div class="brand-content text-start">
+						<div class="title pb-5">
+							<h3>SEO to Improve Brand <br> Visibility</h3>
+						</div> <!-- title end -->
+						<p>
+							We're an experienced and talented team of passionate consultants who breathe with search engine marketing.
+						</p>
+						<ul>
+							<li>
+								<h3>SEO Content Strategy</h3>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+							</li>
+							<li>
+								<h3>B2B SEO</h3>
+								<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="brand-poster text-center">
+						<img src="assets/img/brand-image.svg" class="img-fluid" alt="" title="">
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- brand section end -->
+	
+	<!-- footer section start -->
+	<footer id="footer-section" class="pt-4 pt-lg-5 pb-3 pb-lg-2">
+		<section class="container pt-4 pt-lg-5 pb-3 pb-lg-2">
+			<!-- big footer start -->
+			<div class="big-footer">
+				<div class="row gy-3">
+					<div class="col-md-6 col-lg-3">
+						<div class="footer-content-info">
+							<h2>SEOGram</h2>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero amet, repellendus eius blanditiis in iusto eligendi iure.
+							</p>
+							<ul class="d-flex list-unstyled">
+								<li>
+									<a href="">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<i class="fa-brands fa-facebook-f"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="footer-content">
+							<h3>Company</h3>
+							<ul class="list-unstyled">
+								<li>
+									<a href="">Home</a>
+								</li>
+								<li>
+									<a href="">About Us</a>
+								</li>
+								<li>
+									<a href="">Services</a>
+								</li>
+								<li>
+									<a href="">Privacy Policy</a>
+								</li>
+								<li>
+									<a href="">Trerms and Conditions</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="footer-content">
+							<h3>Conatact Us</h3>
+							<ul class="list-unstyled">
+								<li>
+									<a href="">
+										203 Fake St. Mountain View, San Francisco, California, USA
+									</a>
+								</li>
+								<li>
+									<a href="tel: +8801515283053">
+										01515 28 30 53
+									</a>
+								</li>
+								<li>
+									<a href="mailto: noman.basis.seip@gmail.com">
+										noman.basis.seip@gmail.com
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="footer-content">
+							<h3>Newsletter</h3>
+							<p>
+								Get updates, news or events on your mail.
+							</p>
+							<form>
+								<input type="email" class="form-control" id="email" placeholder="Type Valid Email">
+								<button class="btn btn-success d-block w-100 mt-2">Subscribe</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- big footer end -->
+			
+			<!-- footer start -->
+			<div class="footer text-center pt-5">
+				<p>
+					Copyright © 2045 All rights reserved. By 
+					<a href="" class="text-success">MACode ID</a>
+				</p>
+			</div>
+			<!-- footer end -->
+		</section>
+	</footer>
+	<!-- footer section start -->
+	
+	<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- aos animation -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	  AOS.init();
+	</script>
+	<!-- wow js -->
+	<script src="assets/js/wow.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!-- Default JS -->
+	<script src="assets/js/script.js"></script>
+  </body>
+</html>
