@@ -1,0 +1,320 @@
+/* common code start */
+*{
+    font-family: "Open Sans", Arial, sans-serif;
+}
+.container{
+    min-width: 380px;
+    max-width: 1020px;
+}
+.title{
+    position: relative;
+}
+.title::before{
+    content: '';
+    height: 1px;
+    width: 35%;
+    background: #32FF32;
+    position: absolute;
+    left: 0%;
+    top: 30%;
+}
+.title::after{
+    content: '';
+    height: 1px;
+    width: 35%;
+    background: #32FF32;
+    position: absolute;
+    right: 0%;
+    top: 30%;
+}
+.title h2{
+    color: #444444;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.title p{
+    color: #888888;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.title-content{
+    position: relative;
+}
+.title-content::before{
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #32FF32;
+    position: absolute;
+    left: 35%;
+    top: 22%;
+}
+.title-content::after{
+    content: '';
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #32FF32;
+    position: absolute;
+    right: 35%;
+    top: 22%;
+}
+
+.slick-dots {
+    bottom: -40px;
+}
+.slick-dots li button:before {
+    width: 15px;
+    height: 15px;
+    content: '';
+    background: #ff0000;
+    border-radius: 50%;
+}
+@media (min-width: 380px) and (max-width: 768px){
+    .title::before{
+        width: 20%;
+    }
+    .title::after{
+        width: 20%;
+    }
+    .title-content::before{
+        left: 20%;
+    }
+    .title-content::after{
+        right: 20%;
+    }
+}
+/* common code end */
+/* header section start */
+#header-section{
+    min-width: 380px;
+}
+@media (min-width: 380px) and (max-width: 768px){
+    #header-section{
+        min-height: 300px;
+    }
+    #header-section .logo img{
+        width: 50%;
+    }
+    #header-section .carousel-item img{
+        min-height: 300px;
+    }
+}
+/* header section end */
+/* nav section start */
+#nav-section{
+    border-bottom: 1px solid lightgray;
+}
+#nav-section.navbar {
+    --bs-navbar-padding-y: 0rem;
+}
+#nav-section .nav-link {
+    text-align: center;
+    padding: 15px;
+    /* margin: 0px 5px; */
+    font-size: 12px;
+    font-weight: 400;
+    color: #344807;
+    /* border-left: 1px solid lightgray; */
+    border-right: 1px solid lightgray;
+}
+#nav-section .nav-link i{
+    padding-bottom: 5px;
+}
+#nav-section .nav-item:first-child .nav-link{
+    border-left: 1px solid lightgray;
+}
+#nav-section .nav-link:hover{
+    color: #fff;
+    background: #344807;
+}
+#nav-section .navbar-nav .nav-link.active{
+    color: #fff;
+    background: #344807;
+}
+@media (min-width: 768px) and (max-width: 992px){
+    #nav-section .nav-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100px;
+    }
+}
+/* nav section end */
+
+/* about us section start */
+#about-section{
+    
+}
+#about-section h1{
+    color: #444444;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+#about-section h1 span{
+    color: #ff0000;
+}
+#about-section p{
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+@media(min-width: 0px) and (max-width: 768px){
+    #about-section p{
+        text-align: justify;
+    }
+}
+/* about us section end */
+
+/* features section start */
+#features-section{
+
+}
+.features-card{
+    padding: 60px 30px 30px 30px;
+    background: #F0F0F0;
+    border: 1px solid lightgray;
+    transition: .2s linear;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+.features-card-icon{
+    width: 60px;
+    height: 70px;
+    background: url(../img/features-bg.png) no-repeat;
+    margin: 0px auto;
+    position: absolute;
+    top: -15%;
+    left: 40%;
+}
+.features-card-icon i{
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+    top: 18%;
+}
+.features-card:hover{
+    background: #fff;
+}
+.features-card-body h2{
+    color: #344807;
+    font-size: 20px;
+    font-weight: 600;
+}
+.features-card-body p{
+    color: #344807;
+    font-size: 15px;
+    font-weight: 400;
+}
+.features-card-body li{
+    color: #777777;
+    font-size: 15px;
+    font-weight: 400;
+}
+.features-card-body a{
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 2px 10px;
+    background: #e6e6e6;
+    display: inline-block;
+    text-decoration: none;
+    transition: .2s linear;
+}
+.features-card-body a:hover{
+    color: #ff0000;
+    font-size: 15px;
+}
+@media(min-width: 576px) and (max-width: 768px){
+    .features-card-icon{
+        left: 45%;
+    }
+}
+/* features section end */
+
+/* gallery section start */
+.gallery-card{
+    background: #F6F6F6;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.gallery-card img{
+    border: 2px solid #F6F6F6;
+}
+.gallery-card h4{
+    color: #344807;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 10px 0px 10px;
+}
+.gallery-card p{
+    color: #888888;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0px 10px 10px 10px;
+}
+/* gallery section end */
+
+/* news section start */
+.news-content p{
+    color: #888888;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+/* news section end */
+/* footer section start */
+#footer-section{
+    background: #3A3A3A;
+}
+.big-footer-content h4{
+    color: #dddddd;
+    font-size: 18px;
+    font-weight: 600;
+}
+.big-footer-content ul li{
+    margin-bottom: 5px;
+}
+.big-footer-content ul li a{
+    color: #bbbbbb;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .2s linear;
+}
+.big-footer-content ul li a:hover{
+    color: #fff;
+}
+.footer-bg{
+    padding: 20px 10px;
+    background: #303030;
+}
+.footer-content a{
+    color: #bbbbbb;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .2s linear;
+}
+.footer-content a:hover{
+    color: #fff;
+}
+.footer-content.text-alignment{
+    text-align: right;
+}
+@media (min-width: 380px) and (max-width: 576px){
+    .footer-content.text-alignment{
+        text-align: left;
+    }
+}
+/* footer section end */
