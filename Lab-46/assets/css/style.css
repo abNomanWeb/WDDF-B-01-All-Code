@@ -1,0 +1,139 @@
+/* common code start */
+:root{
+    --primary-color: #87D37C;
+    --secondary-color: #fff;
+    --dark-color: #040404;
+}
+.container{
+    min-width: 400px;
+}
+.text-justify{
+    text-align: justify;
+}
+/* common code end */
+/* header section start */
+#header-section{
+    /* background: url(../img/banner.jpg) no-repeat; */
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+}
+/* navbar start */
+#navbar{
+    height: 100px;
+}
+#navbar .nav-link{
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#navbar .nav-link:focus, 
+#navbar .nav-link:hover {
+    color: var(--primary-color);
+}
+#navbar .navbar-nav .nav-link.active, 
+#navbar .navbar-nav .nav-link.show {
+    color: var(--primary-color);
+}
+/* navbar end */
+/* carousel start */
+#header-carousel h2{
+    color: var(--secondary-color);
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#header-carousel h1{
+    color: var(--secondary-color);
+    /* font-size: 100px; */
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 20px;
+    border: 4px solid var(--secondary-color);
+}
+#header-carousel h1 span{
+    color: var(--primary-color);
+}
+#header-carousel h3{
+    color: var(--secondary-color);
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+#header-carousel .carousel-indicators [data-bs-target] {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 1;
+}
+#header-carousel .carousel-indicators .active {
+    background-color: var(--primary-color);
+}
+/* carousel end */
+/* header section end */
+
+/* about us section start */
+#about-section .content-block-header i,
+#about-section .content-block-header h3{
+    transition: .4s linear;
+    cursor: pointer;
+    color: var(--dark-color);
+}
+#about-section .content-block-header:hover i,
+#about-section .content-block-header:hover h3{
+    color: var(--primary-color);
+}
+/* about us section end */
+
+/* services section start */
+#services-section{
+    background: #e1e1e1;
+}
+#services-section .content-block{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+#services-section .content-block-overlay{
+    position: absolute;
+    top: -100%;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    transition: .5s linear;
+    visibility: hidden;
+}
+#services-section .content-block:hover .content-block-overlay{
+    top: 0%;
+    visibility: visible;
+}
+#services-section ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+#services-section ul li{
+    list-style: none;
+}
+#services-section ul li a{
+    font-size: 24px;
+    color: var(--secondary-color);
+    padding: 12px 16px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary-color);
+    transition: .5s linear;
+}
+#services-section ul li a:hover{
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+/* services section end */
